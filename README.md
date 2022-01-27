@@ -64,11 +64,15 @@ localStorage.clear()
     <td>
     <img height="150px" src="https://github.com/sucodelarangela/alura-challenge-front-end/blob/master/Images/Badge%20-%20Compartilhamento.png">
     </td>
+    <td>
+    <img height="150px" src="https://github.com/sucodelarangela/alura-challenge-front-end/blob/master/Images/Badge%20-%20LinkedIn.png">
+    </td>
   </tr>
   <tr>
     <td>Badge de Participação</td>
     <td>Badge de Apoio<br>à Comunidade</td>
-    <td>Badge de Share<br>Github
+    <td>Badge de Share<br>Github</td>
+    <td>Badge de Interação<br>do LinkedIn</td>
   </tr>
 </table>
 
@@ -140,10 +144,14 @@ localStorage.clear()
     <td>
     <img height="150px" src="https://github.com/sucodelarangela/alura-challenge-front-end/blob/master/Images/Badge%20-%20Compartilhamento.png">
     </td>
+    <td>
+    <img height="150px" src="https://github.com/sucodelarangela/alura-challenge-front-end/blob/master/Images/Badge%20-%20LinkedIn.png">
+    </td>
   </tr>
   <tr>
     <td>Participation Badge</td>
     <td>Community<br>Support Badge</td>
-    <td>Github Repo<br>Shared Badge
+    <td>Github Repo<br>Shared Badge</td>
+    <td>LinkedIn<br>Interaction Badge</td>
   </tr>
 </table>
