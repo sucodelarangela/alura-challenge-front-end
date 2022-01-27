@@ -51,6 +51,27 @@ localStorage.clear()
   <a href="https://masonry.desandro.com/" target="_blank"><img src="https://img.shields.io/badge/-MASONRY-%23D26"></a>
 </div>
 
+## Badges recebidas pelo projeto
+
+<table style="text-align: center;">
+  <tr>
+    <td>
+      <img height="150px" src="https://github.com/sucodelarangela/alura-challenge-front-end/blob/master/Images/Badge%20-%20Participacao.png">
+    </td>
+    <td>
+      <img height="150px" src="https://github.com/sucodelarangela/alura-challenge-front-end/blob/master/Images/Badge%20-%20Comunidade.png">
+    </td>
+    <td>
+    <img height="150px" src="https://github.com/sucodelarangela/alura-challenge-front-end/blob/master/Images/Badge%20-%20Compartilhamento.png">
+    </td>
+  </tr>
+  <tr>
+    <td>Badge de Participação</td>
+    <td>Badge de Apoio<br>à Comunidade</td>
+    <td>Badge de Share<br>Github
+  </tr>
+</table>
+
 ---
 
 <div id="English" style="font-style: italic;">English version</div>
@@ -105,3 +126,24 @@ localStorage.clear()
   <a href="https://sweetalert.js.org/" target="_blank"><img src="https://img.shields.io/badge/-SWEETALERT-%23f27474"></a>
   <a href="https://masonry.desandro.com/" target="_blank"><img src="https://img.shields.io/badge/-MASONRY-%23D26"></a>
 </div>
+
+## Badges received in this project
+
+<table style="text-align: center;">
+  <tr>
+    <td>
+      <img height="150px" src="https://github.com/sucodelarangela/alura-challenge-front-end/blob/master/Images/Badge%20-%20Participacao.png">
+    </td>
+    <td>
+      <img height="150px" src="https://github.com/sucodelarangela/alura-challenge-front-end/blob/master/Images/Badge%20-%20Comunidade.png">
+    </td>
+    <td>
+    <img height="150px" src="https://github.com/sucodelarangela/alura-challenge-front-end/blob/master/Images/Badge%20-%20Compartilhamento.png">
+    </td>
+  </tr>
+  <tr>
+    <td>Participation Badge</td>
+    <td>Community<br>Support Badge</td>
+    <td>Github Repo<br>Shared Badge
+  </tr>
+</table>
