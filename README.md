@@ -71,7 +71,7 @@ localStorage.clear()
   <tr>
     <td>Badge de Participação</td>
     <td>Badge de Apoio<br>à Comunidade</td>
-    <td>Badge de Share<br>Github</td>
+    <td>Badge de Repostório<br>do Github</td>
     <td>Badge de Interação<br>do LinkedIn</td>
   </tr>
 </table>
