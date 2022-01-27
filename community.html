@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AluraDEV | Community</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/equilibrium_dark.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/left_menu.css" />
+    <link rel="stylesheet" href="css/nav_menu.css" />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+
+  <body>
+    <!-- CABEÇALHO -->
+    <header class="header container">
+      <img src="Images/Logo.svg" alt="Logo da AluraDEV" class="header__logo" />
+      <input
+        type="search"
+        id="header__input"
+        class="header__input input"
+        placeholder="Busque por algo"
+      />
+      <input
+        type="search"
+        id="header__mobile-input"
+        class="header__mobile input"
+        placeholder="Busque por algo"
+      />
+      <div id="menu__mobile">
+        <button
+          class="header__search"
+          onclick="javascript: document.body.classList.toggle('search')"
+        >
+          <img alt="Botão de busca" id="search-icon" />
+        </button>
+        <button
+          class="header__menu"
+          onclick="javascript: document.body.classList.toggle('open')"
+        >
+          <img alt="Botão de menu" id="menu-icon" />
+        </button>
+      </div>
+      <a class="header__user">
+        <i class="header__user--photo icon-sign-in" alt="Foto do usuário"></i>
+        <h1 class="header__user--name">Fazer login</h1>
+      </a>
+    </header>
+
+    <main>
+      <section class="community container">
+        <!-- MENU ESQUERDO -->
+        <nav class="left__menu--card container">
+          <h1 class="project__label">Menu</h1>
+          <ul>
+            <li class="left__menu--list">
+              <a class="editor__icon" href="index.html">
+                <img src="Images/editor_icon.svg" alt="Acessar editor" />
+                <span id="editor" style="opacity: 0.56"
+                  >Editor de código</span
+                ></a
+              >
+            </li>
+            <li class="left__menu--list">
+              <a class="community__icon" href="#">
+                <img
+                  src="Images/community_icon_focus.svg"
+                  alt="Acessar comunidade"
+                />
+                <span id="community">Comunidade</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- CARDS DA COMUNIDADE -->
+        <div
+          class="card__grid js-all-projects"
+          data-masonry='{"itemSelector": ".cards", "percentPosition": true}'
+        ></div>
+      </section>
+
+      <!-- MENU MOBILE/TABLET -->
+      <nav class="nav">
+        <ul class="nav__ul">
+          <li class="sliding__list editor__nav">
+            <a href="index.html">
+              <img src="Images/editor_icon.svg" alt="Acessar editor" />
+              <span id="editor" style="opacity: 0.56">Editor de código</span></a
+            >
+          </li>
+          <li class="sliding__list community">
+            <a class="community__icon" href="#">
+              <img
+                src="Images/community_icon_focus.svg"
+                alt="Acessar comunidade"
+              />
+              <span id="community">Comunidade</span>
+            </a>
+          </li>
+        </ul>
+        <hr />
+        <a class="user">
+          <i
+            class="header__user--photo icon-sign-in"
+            style="font-size: 2rem"
+          ></i>
+          <h1 class="user--name">Fazer login</h1>
+        </a>
+      </nav>
+    </main>
+    <footer class="footer container"></footer>
+
+    <!-- 12.01.22 -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <!--  -->
+    <script src="script/community.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+    <script>
+      const allCodes = document.querySelectorAll('code')
+      allCodes.forEach(code => {
+        hljs.highlightElement(code)
+      })
+      // hljs.highlightAll(document.querySelectorAll('code'))
+    </script>
+    <script src="script/like_button.js"></script>
+    <script src="script/login.js"></script>
+    <script src="script/delete_item.js"></script>
+  </body>
+</html>

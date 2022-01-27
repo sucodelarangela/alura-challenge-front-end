@@ -1,0 +1,176 @@
+.cards {
+  background: rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+
+  height: fit-content;
+  width: 100%;
+}
+
+.editor__code {
+  line-height: 1.5rem;
+
+  padding: 1.5rem 0;
+
+  overflow-wrap: break-word;
+}
+
+.card__box {
+  padding: 2rem;
+
+  border-radius: 8px;
+
+  box-sizing: border-box;
+
+  line-height: normal;
+}
+
+.card__border {
+  padding: 1rem;
+
+  border-radius: 8px;
+
+  color: white;
+  background: #0c1118;
+
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.card__border:hover .overlay {
+  display: block;
+  opacity: 0.35;
+}
+
+.delete__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.delete__button img {
+  width: 5rem;
+}
+
+.card__border:hover .delete__button {
+  opacity: 1;
+}
+
+.card__content,
+.card__actions {
+  display: block;
+  padding: 24px;
+
+  font-family: var(--inter);
+  color: white;
+}
+
+.card__actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 0;
+}
+
+.card__content h1 {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 31.5px;
+}
+
+.card__owner,
+.card__content p {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+.card__buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.card__owner {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 0.5rem;
+
+  padding: 8px;
+
+  background: none;
+  border: none;
+  border-radius: 8px;
+}
+
+.card__owner:hover {
+  background: var(--user-hover);
+}
+
+button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  width: auto;
+  height: 40px;
+  padding: 8px;
+
+  font-family: var(--inter);
+  color: white;
+
+  background: none;
+
+  border: none;
+  border-radius: 16px;
+
+  cursor: pointer;
+}
+
+button i {
+  padding-right: 8px;
+  font-size: 1.5rem;
+}
+
+button:hover {
+  background: var(--user-hover);
+}
+
+button:active {
+  background: var(--botao-active);
+}
+
+@media screen and (min-width: 1440px) {
+  .card__grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto-fill);
+    column-gap: 1.5rem;
+  }
+
+  .cards {
+    width: calc(50% - 2rem);
+    margin-left: 2rem;
+  }
+
+  .editor__code {
+    min-height: 50px;
+
+    overflow-y: auto;
+  }
+}

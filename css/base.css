@@ -1,0 +1,89 @@
+:root {
+  --azul-claro: #5081fb;
+  --azul-escuro: #051d3b;
+  --ciano: #6bd1ff;
+  --botao-highlight: rgba(80, 129, 251, 0.08);
+  --botao-active: rgba(80, 129, 251, 0.16);
+  --branco-transp: rgba(255, 255, 255, 0.64);
+  --laranja: #ffc46b;
+  --linha: rgba(255, 255, 255, 1);
+  --menu-mobile: #2d415b;
+  --rosa: #ff6bcd;
+  --roxo: #5f75e2;
+  --user-hover: rgba(255, 255, 255, 0.08);
+  --verde: #9aff6b;
+
+  --inter: 'Inter', sans-serif;
+  --roboto: 'Roboto Mono', monospace;
+}
+
+body {
+  font-family: var(--inter);
+  background: var(--azul-escuro);
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.button {
+  display: block;
+
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 1rem 2rem;
+
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+.swal-button {
+  background: var(--azul-claro);
+}
+
+.input {
+  background: rgba(255, 255, 255, 0.16);
+
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.875rem;
+
+  border: none;
+  border-radius: 8px;
+
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.64);
+  caret-color: white;
+}
+
+.footer {
+  height: 40px;
+
+  background-color: var(--azul-escuro);
+}
+
+.swal-overlay {
+  background-color: rgba(107, 209, 255, 0.45);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer {
+    min-height: 40px;
+  }
+}

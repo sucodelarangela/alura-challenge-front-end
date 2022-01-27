@@ -1,0 +1,138 @@
+.project {
+  background-color: var(--azul-escuro);
+}
+
+.project__menu {
+  width: 100%;
+
+  padding-top: 2.5rem;
+}
+
+.project__label {
+  display: inline;
+
+  font-size: 0.75rem;
+  font-weight: normal;
+  line-height: 18px;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+
+  color: white;
+}
+
+.project__name,
+.project__language {
+  width: 100%;
+  height: 56px;
+
+  box-sizing: border-box;
+
+  margin-top: 1rem;
+
+  outline: none;
+}
+
+.project__name:hover,
+.project__info:hover,
+.project__language:hover {
+  background: rgba(255, 255, 255, 0.24);
+  transition: 0.3s;
+}
+
+textarea {
+  width: 100%;
+  height: fit-content;
+
+  margin-top: 1rem;
+
+  box-sizing: border-box;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 24px;
+
+  resize: none;
+  outline: none;
+}
+
+::placeholder,
+.project__language {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 24px;
+
+  color: rgba(255, 255, 255, 0.64);
+}
+
+.project__color {
+  width: 100%;
+  height: 3.5rem;
+
+  margin-top: 1rem;
+
+  background: none;
+
+  border: 1px solid white;
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+input[type='color']::-webkit-color-swatch {
+  border: none;
+  border-radius: 4px;
+}
+
+.project__button {
+  width: 100%;
+
+  margin-top: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+
+  background: var(--azul-claro);
+
+  color: var(--azul-escuro);
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+.project__button:hover {
+  background: #7ba4fc;
+  transition: 0.3s;
+}
+
+.project__button:active {
+  background: #7ba4fc;
+  border: 4px solid rgba(80, 129, 251, 0.72);
+}
+
+@media screen and (min-width: 768px) {
+  .project__menu div {
+    margin-top: 0;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .project__menu div {
+    display: grid;
+    gap: 0;
+  }
+
+  .project__menu,
+  .project_language {
+    width: 17rem;
+
+    padding-top: 0;
+    position: relative;
+  }
+
+  textarea {
+    margin-bottom: 40px;
+  }
+}

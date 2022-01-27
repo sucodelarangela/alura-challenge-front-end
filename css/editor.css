@@ -1,0 +1,93 @@
+.editor {
+  background-color: var(--azul-escuro);
+
+  height: fit-content;
+}
+
+.editor__box {
+  padding: 2rem;
+
+  border-radius: 8px;
+
+  box-sizing: border-box;
+}
+
+.mode__toggle {
+  visibility: hidden;
+}
+
+.mode__toggle.mode {
+  visibility: visible;
+  float: right;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.editor__border {
+  padding: 1rem;
+
+  border-radius: 8px;
+
+  background: #0c1118;
+  color: #afaba2;
+}
+
+.editor__code {
+  outline: none;
+
+  min-height: 15rem;
+  padding-top: 1.5rem;
+
+  font-family: var(--roboto);
+  font-size: 0.875rem;
+  font-weight: normal;
+  line-height: 1.3rem;
+
+  overflow: hidden;
+
+  white-space: pre-wrap;
+}
+
+.editor__button {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+
+  box-sizing: border-box;
+
+  background: var(--botao-highlight);
+
+  color: white;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+.editor__button:hover {
+  background: var(--botao-active);
+  transition: 0.3s;
+}
+
+.editor__button:active {
+  background: var(--botao-active);
+  border: 4px solid rgba(80, 129, 251, 0.24);
+}
+
+@media screen and (min-width: 1440px) {
+  .editor {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+  }
+
+  .editor__box {
+    position: relative;
+    width: 752px;
+  }
+}
