@@ -13,7 +13,7 @@ A **AluraDEV** simula uma rede social para desenvolvedores, onde é possível co
 <!-- prettier-ignore -->
 | 🪧 Vitrine.Dev |     |
 | ------------- | --- |
-| ✨ Nome       | **AluraDev** |
+| ✨ Nome       | **AluraDev** - Challenge Alura |
 | 🏷️ Tecnologias | HTML, CSS, JavaScript, Highlight, SweetAlert, Masonry |
 | 🚀 URL         | [**Acesse o site**](https://sucodelarangela.github.io/alura-challenge-front-end/). Veja mais detalhes de uso no item [**⚙️ Como usar**](#howto) |
 | 🔥 Desafio     | [**Protótipo do Figma**](https://www.figma.com/file/Ve4hpTfmMa7yAFneoGtGKD/Alura-Challenge---Edi%C3%A7%C3%A3o-Front-end?node-id=207%3A729) |
